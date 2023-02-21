@@ -13,279 +13,78 @@ wynik.innerHTML=wynik.innerHTML+"."
 
 })
 
-
-let liczba2=document.querySelector(".liczba2")
-liczba2.addEventListener("click",()=>{
-if(table.length==1){return;}
-else if(wynik.innerHTML!=="0"&&wynik.innerHTML!=="*"&&
-wynik.innerHTML!=="+"&&wynik.innerHTML!=="-"&&wynik.innerHTML!=="/"){
-wynik.innerHTML=wynik.innerHTML+2}
-else if(wynik.innerHTML=="0"){
-wynik.innerHTML=2}
-else if(wynik.innerHTML=="*"){
-wynik.innerHTML=2}
-else if(wynik.innerHTML=="-"){
-wynik.innerHTML=2}
-else if(wynik.innerHTML=="+"){
-wynik.innerHTML=2}
-else if(wynik.innerHTML=="/"){
-wynik.innerHTML=2}
-})
-
-let liczba3=document.querySelector(".liczba3")
-liczba3.addEventListener("click",()=>{
-if(table.length==1){return}
-else if(wynik.innerHTML!=="0"&&wynik.innerHTML!=="*"&&
-wynik.innerHTML!=="+"&&wynik.innerHTML!=="-"&&wynik.innerHTML!=="/"){
-wynik.innerHTML=wynik.innerHTML+3}
-else if(wynik.innerHTML=="0"){
-wynik.innerHTML=3}
-else if(wynik.innerHTML=="*"){
-wynik.innerHTML=3}
-else if(wynik.innerHTML=="-"){
-wynik.innerHTML=3}
-else if(wynik.innerHTML=="+"){
-wynik.innerHTML=3}
-else if(wynik.innerHTML=="/"){
-wynik.innerHTML=3}
-})
-
-let liczba4=document.querySelector(".liczba4")
-liczba4.addEventListener("click",()=>{
-if(table.length==1){return}
-else if(wynik.innerHTML!=="0"&&wynik.innerHTML!=="*"&&
-wynik.innerHTML!=="+"&&wynik.innerHTML!=="-"&&wynik.innerHTML!=="/"){
-wynik.innerHTML=wynik.innerHTML+4}
-else if(wynik.innerHTML=="0"){
-wynik.innerHTML=4}
-else if(wynik.innerHTML=="*"){
-wynik.innerHTML=4}
-else if(wynik.innerHTML=="-"){
-wynik.innerHTML=4}
-else if(wynik.innerHTML=="+"){
-wynik.innerHTML=4}
-else if(wynik.innerHTML=="/"){
-wynik.innerHTML=4}
-})
-
-let liczba5=document.querySelector(".liczba5")
-liczba5.addEventListener("click",()=>{
-
-if(table.length==1){return}
-else if(wynik.innerHTML!=="0"&&wynik.innerHTML!=="*"&&
-wynik.innerHTML!=="+"&&wynik.innerHTML!=="-"&&wynik.innerHTML!=="/"){
-wynik.innerHTML=wynik.innerHTML+5}
-else if(wynik.innerHTML=="0"){
-wynik.innerHTML=5}
-else if(wynik.innerHTML=="*"){
-wynik.innerHTML=5}
-else if(wynik.innerHTML=="-"){
-wynik.innerHTML=5}
-else if(wynik.innerHTML=="+"){
-wynik.innerHTML=5}
-else if(wynik.innerHTML=="/"){
-wynik.innerHTML=5}
-})
-
-let liczba6=document.querySelector(".liczba6")
-liczba6.addEventListener("click",()=>{
-if(table.length==1){return}
-else if(wynik.innerHTML!=="0"&&wynik.innerHTML!=="*"&&
-wynik.innerHTML!=="+"&&wynik.innerHTML!=="-"&&wynik.innerHTML!=="/"){
-wynik.innerHTML=wynik.innerHTML+6}
-else if(wynik.innerHTML=="0"){
-wynik.innerHTML=6}
-else if(wynik.innerHTML=="*"){
-wynik.innerHTML=6}
-else if(wynik.innerHTML=="-"){
-wynik.innerHTML=6}
-else if(wynik.innerHTML=="+"){
-wynik.innerHTML=6}
-else if(wynik.innerHTML=="/"){
-wynik.innerHTML=6}
-})
-
-let liczba7=document.querySelector(".liczba7")
-liczba7.addEventListener("click",()=>{
-if(table.length==1){return}
-else if(wynik.innerHTML!=="0"&&wynik.innerHTML!=="*"&&
-wynik.innerHTML!=="+"&&wynik.innerHTML!=="-"&&wynik.innerHTML!=="/"){
-wynik.innerHTML=wynik.innerHTML+7}
-else if(wynik.innerHTML=="0"){
-wynik.innerHTML=7}
-else if(wynik.innerHTML=="*"){
-wynik.innerHTML=7}
-else if(wynik.innerHTML=="-"){
-wynik.innerHTML=7}
-else if(wynik.innerHTML=="+"){
-wynik.innerHTML=7}
-else if(wynik.innerHTML=="/"){
-wynik.innerHTML=7}
-})
-
-let liczba8=document.querySelector(".liczba8")
-liczba8.addEventListener("click",()=>{
-if(table.length==1){return}
-else if(wynik.innerHTML!=="0"&&wynik.innerHTML!=="*"&&
-wynik.innerHTML!=="+"&&wynik.innerHTML!=="-"&&wynik.innerHTML!=="/"){
-wynik.innerHTML=wynik.innerHTML+8}
-else if(wynik.innerHTML=="0"){
-wynik.innerHTML=8}
-else if(wynik.innerHTML=="*"){
-wynik.innerHTML=8}
-else if(wynik.innerHTML=="-"){
-wynik.innerHTML=8}
-else if(wynik.innerHTML=="+"){
-wynik.innerHTML=8}
-else if(wynik.innerHTML=="/"){
-wynik.innerHTML=8}
-})
-
-let liczba1=document.querySelector(".liczba1")
-liczba1.addEventListener("click",()=>{
-if(table.length==1){return}
-else if(wynik.innerHTML!=="0"&&wynik.innerHTML!=="*"&&
-wynik.innerHTML!=="+"&&wynik.innerHTML!=="-"&&wynik.innerHTML!=="/"){
-wynik.innerHTML=wynik.innerHTML+1}
-else if(wynik.innerHTML=="0"){
-wynik.innerHTML=1}
-else if(wynik.innerHTML=="*"){
-wynik.innerHTML=1}
-else if(wynik.innerHTML=="-"){
-wynik.innerHTML=1}
-else if(wynik.innerHTML=="+"){
-wynik.innerHTML=1}
-else if(wynik.innerHTML=="/"){
-wynik.innerHTML=1}
-})
-let liczba9=document.querySelector(".liczba9")
-liczba9.addEventListener("click",()=>{
-  
-if(table.length==1){return}
-else if(wynik.innerHTML!=="0"&&wynik.innerHTML!=="*"&&
-wynik.innerHTML!=="+"&&wynik.innerHTML!=="-"&&wynik.innerHTML!=="/"){
-wynik.innerHTML=wynik.innerHTML+9}
-else if(wynik.innerHTML=="0"){
-wynik.innerHTML=9}
-else if(wynik.innerHTML=="*"){
-wynik.innerHTML=9}
-else if(wynik.innerHTML=="-"){
-wynik.innerHTML=9}
-else if(wynik.innerHTML=="+"){
-wynik.innerHTML=9}
-else if(wynik.innerHTML=="/"){
-wynik.innerHTML=9}
-})
+let tab=[]
+let liczby2=[]
+let liczby=document.querySelectorAll(".liczba")
 
 
-let zero=document.querySelector(".zero")
-zero.addEventListener("click",()=>{
-if(table.length==1){return}
-else if(wynik.innerHTML!=="0"&&wynik.innerHTML!=="*"&&
-wynik.innerHTML!=="+"&&wynik.innerHTML!=="-"&&wynik.innerHTML!=="/"){
-wynik.innerHTML=wynik.innerHTML+0}
-else if(wynik.innerHTML=="0"){
-wynik.innerHTML=0}
-else if(wynik.innerHTML=="*"){
-wynik.innerHTML=0}
-else if(wynik.innerHTML=="-"){
-wynik.innerHTML=0}
-else if(wynik.innerHTML=="+"){
-wynik.innerHTML=0}
-else if(wynik.innerHTML=="/"){
-wynik.innerHTML=0}
-})
-
-
-document.querySelector("#podziel").addEventListener("click",dzielenie)
-function dzielenie(){
-if(wynik.innerHTML=="*"
-||wynik.innerHTML=="/"
-||wynik.innerHTML=="+"
-||wynik.innerHTML=="-"
-||wynik.innerHTML=="="    
-){return;}
-else if (table.length==1){
-table.push("/")
-wynik.innerHTML="/"
+for(let i=0;i<liczby.length;i++){
+liczby2.push(liczby[i])
+liczby2[i].addEventListener('click',dodajdowyniku)
 }
-else if(table.length!==1){
-let zmienna=wynik.innerHTML*1
-table.push(zmienna)
-table.push("/")
-wynik.innerHTML="/"
-}}
 console.log(table)
 
-document.querySelector("#pomnożyć").addEventListener("click",mnożenie)
-function mnożenie(){
+function dodajdowyniku(){
+  console.log(this)
+ if(tab.length==1){tab.pop()}
+if(table.length==1){table.pop() 
+   wynik.innerHTML=this.innerHTML}
+else if(wynik.innerHTML!=="0"&&wynik.innerHTML!=="*"&&
+wynik.innerHTML!=="+"&&wynik.innerHTML!=="-"&&wynik.innerHTML!=="/"){
+wynik.innerHTML=wynik.innerHTML+this.innerHTML}
+else if(wynik.innerHTML=="0"){
+wynik.innerHTML=this.innerHTML}
+else if(wynik.innerHTML=="*"){
+wynik.innerHTML=this.innerHTML}
+else if(wynik.innerHTML=="-"){
+wynik.innerHTML=this.innerHTML}
+else if(wynik.innerHTML=="+"){
+wynik.innerHTML=this.innerHTML}
+else if(wynik.innerHTML=="/"){
+wynik.innerHTML=this.innerHTML}
+tab.push(1)
+}
+
+let znaki2=[]
+let znaki=document.querySelectorAll(".znak")
+
+
+for(let i=0;i<znaki.length;i++){
+znaki2.push(znaki[i])
+znaki2[i].addEventListener('click',dodajznakdowyniku)
+}
+
+console.log(table)
+function dodajznakdowyniku(){
+  console.log(this.innerHTML)
 if(wynik.innerHTML=="*"
 ||wynik.innerHTML=="/"
 ||wynik.innerHTML=="+"
 ||wynik.innerHTML=="-"
-||wynik.innerHTML=="="  
+||wynik.innerHTML=="=" 
+|| tab.length==0
 ){return;}
 else if (table.length==1){
-table.push("*")
-wynik.innerHTML="*"
-
+table.push(this.innerHTML)
+wynik.innerHTML=this.innerHTML
 }
 else if(table.length!==1){
+  console.log(this)
 let zmienna=wynik.innerHTML*1
 table.push(zmienna)
-table.push("*")
-wynik.innerHTML="*"
-}
-}
-    
-document.querySelector("#dodać").addEventListener("click",dodawanie)
-function dodawanie(){
-if(wynik.innerHTML=="*"
-||wynik.innerHTML=="/"
-||wynik.innerHTML=="+"
-||wynik.innerHTML=="-"
-||wynik.innerHTML=="="
-    
-){return;}
-else if (table.length==1){
-table.push("+")
-wynik.innerHTML="+"
-}
-else if(table.length!==1){
-let zmienna=wynik.innerHTML*1
-table.push(zmienna)
-table.push("+")
-wynik.innerHTML="+"
+table.push(this.innerHTML)
+wynik.innerHTML=this.innerHTML
 }
 }
 
-document.querySelector("#odjąć").addEventListener("click",odjąć)
-function odjąć(){
-if(wynik.innerHTML=="*"
-||wynik.innerHTML=="/"
-||wynik.innerHTML=="+"
-||wynik.innerHTML=="-"
-||wynik.innerHTML=="="
-        
-){return;}
-else if (table.length==1){
-table.push("-")
-wynik.innerHTML="-"
-
-}
-else if(table.length!==1){
-let zmienna=wynik.innerHTML*1
-table.push(zmienna)
-table.push("-")
-wynik.innerHTML="-"
-}
-}
 
 document.querySelector("#Usunąć").addEventListener("click",usunąć)
 function usunąć(){
 table.splice(0,table.length)
 wynik.innerHTML="0"
 }
+
+
 document.querySelector(".równość").addEventListener("click",równość)
 function równość(){
 if(wynik.innerHTML=="*"
@@ -330,5 +129,4 @@ table.splice(i-1,3,table[i-1]-table[i+1])
 i=0
 }
 let wyniki=table[0]
-wynik.innerHTML=wyniki
-}}
+wynik.innerHTML=wyniki}}

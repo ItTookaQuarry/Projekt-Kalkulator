@@ -1,73 +1,57 @@
-#wrapper { 
-height: 700px; 
-width: 750px;
-background-color: white;
-display: grid;
-grid-template-columns:  1fr 1fr 1fr 1.2fr ;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
-font-family: arial;
+
+body {
+    display:grid;
+    grid-template-areas: "kalkulator nokalkulator"
+                         "kalkulator nokalkulator"
+                         "kalkulator nokalkulator"
 }
 
 
-#wynik{ grid-column: 1/4;
-border: 10px solid black;
-font-size: xx-large;
-text-align: center;
-font-size: 400%;
-}
+   #wrapper { 
+    grid-area: kalkulator;
+    width: 60%;
+    height: 200%;
+    margin: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    font-family: arial;
+} 
 
-#pomnożyć{
-grid-column:-1/-2;
-font-size: 400%;
-border: 10px solid black;
-text-align: center;
-background-color: pink;
-border-radius: 20%;
-font-family: arial;
-}
-
-#dodać
-{
-grid-column:-1/-2;
-font-size: 400%;
-border: 10px solid black;
-text-align: center;
-background-color: pink;
-border-radius: 20%;
-font-family: arial;
-}
-
-#podziel{
-grid-column:-1/-2;
-font-size: 400%;
-border: 10px solid black;
-text-align: center;
-background-color: pink;
-border-radius: 20%;
-font-family: arial;
-}
-
-#odjąć{
-grid-column:-1/-2;
-font-size: 400%;
-border: 10px solid black;
-text-align: center;
-background-color: pink;
-border-radius: 20%;
+#wynik { 
+    grid-column: 1/4;
+    border: 10px solid black;
+    font-size: xx-large;
+    text-align: center;
+    font-size: 400%;
 }
 
 
-#Usunąć{
-grid-column:-1/-2;
-font-size: 400%;
-border: 10px solid black;
-text-align: center;
-background-color: pink;
-border-radius: 20%;
+
+
+.znak{
+    grid-column:-1/-2;
+    font-size: 400%;
+    border: 10px solid black;
+    text-align: center;
+    background-color: pink;
+    border-radius: 20%;
+    font-family: arial;
 }
 
 
-.liczba1{grid-column: 1/2;
+#Usunąć {
+    grid-column:-1/-2;
+    font-size: 400%;
+    border: 10px solid black;
+    text-align: center;
+    background-color: pink;
+    border-radius: 20%;
+}
+
+
+.liczba {
 grid-row: 3/2;
 font-size: 400%;
 border: 10px solid black;
@@ -75,104 +59,94 @@ text-align: center;
 border-radius: 20%;
 }
 
-.liczba2{grid-column: 2/3;
-grid-row: 3/2;
-font-size: xx-large;
-border: 10px solid black;
-text-align: center;
-border-radius: 20%;
-font-size: 400%;
+
+
+ .l1 {
+    grid-column: 1/2;
+    grid-row: 3/2;
 }
 
-.liczba3{grid-column: 3/4;
-grid-row: 3/2;
-font-size: xx-large;
-border: 10px solid black;
-text-align: center;
-border-radius: 20%;
-font-size: 400%;
-}
+.l2 {
+    grid-column: 2/3;
+    grid-row: 3/2;}
 
-.liczba4{grid-column: 1/2;
-grid-row: 3/4;
-font-size: xx-large;
-border: 10px solid black;
-text-align: center;
-border-radius: 20%;
-font-size: 400%;
+.l4 {
+    grid-column: 1/2;
+    grid-row: 3/4;
 }
 
 
-.liczba5{grid-column: 2/3;
-grid-row: 3/4;
-font-size: xx-large;
-border: 10px solid black;
-text-align: center;
-border-radius: 20%;
-font-size: 400%;
+.l5 { 
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
 
-.liczba6{grid-column: 3/4;
-grid-row: 3/4;
-font-size: xx-large;
-border: 10px solid black;
-text-align: center;
-border-radius: 20%;
-font-size: 400%;
-}
+.l6 {
+    grid-column: 3/4;
+    grid-row: 3/4;}
 
-.liczba7{grid-column: 1/2;
-grid-row: 4/5;
-font-size: xx-large;
-border: 10px solid black;
-text-align: center;
-border-radius: 20%;
-font-size: 400%;
+.l7 {
+    grid-column: 1/2;
+    grid-row: 4/5;
 }
 
 
-.liczba8{grid-column: 2/3;
-grid-row: 4/5;
-font-size: xx-large;
-border: 10px solid black;
-text-align: center;
-border-radius: 20%;
-font-size: 400%;
+.l8 {
+    grid-column: 2/3;
+    grid-row: 4/5;
 }
 
 
 
-.liczba9{grid-column: 3/4;
-grid-row: 4/5;
-font-size: xx-large;
-border: 10px solid black;
-text-align: center;
-border-radius: 20%;
-font-size: 400%;}
+.l9 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
 
-.kropka{grid-column: 2/3;
-grid-row: 5/6;
-font-size: 400%;
-border: 10px solid black;
-text-align: center;
-border-radius: 20%;}
+.kropka {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    font-size: 400%;
+    border: 10px solid black;
+    text-align: center;
+    border-radius: 20%;
+}
 
-.zero{grid-column: 1/2;
-grid-row: 5/6;
-font-size: xx-large;
-border: 10px solid black;
-text-align: center;
-border-radius: 20%;
-font-size: 400%;}
+.zero {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    font-size: xx-large;
+    border: 10px solid black;
+    text-align: center;
+    border-radius: 20%;
+    font-size: 400%;
+}
 
 
 
-.równość{
-grid-column: 3/4;
-grid-row: 5/6;
-font-size: xx-large;
-border: 10px solid black;
-text-align: center;
-border-radius: 20%;
-font-size: 400%;}
+.równość {
+    grid-column: 3/4;
+    grid-row: 5/6;
+    font-size: xx-large;
+    border: 10px solid black;
+    text-align: center;
+    border-radius: 20%;
+    font-size: 400%;
+} 
 
+ 
+
+ @media only screen
+  and (max-width: 768px) {
+        body { 
+        grid-template-areas: 
+        "kalkulator kalkulator"}
+
+
+    #wrapper { 
+        grid-area: kalkulator;
+        width: 50%;
+        height: 50%;
+                                
+      }  
+    }
