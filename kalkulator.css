@@ -1,16 +1,15 @@
 
 body {
     display:grid;
-    grid-template-areas: "kalkulator nokalkulator"
-                         "kalkulator nokalkulator"
-                         "kalkulator nokalkulator"
+    grid-template-areas: "nokalkulator kalkulator nookalkulator nookalkulator"
+                         "nokalkulator kalkulator nookalkulator nookalkulator"
+                       
+                         
 }
 
 
    #wrapper { 
     grid-area: kalkulator;
-    width: 60%;
-    height: 200%;
     margin: auto;
     background-color: white;
     display: grid;
@@ -138,15 +137,11 @@ border-radius: 20%;
 
  @media only screen
   and (max-width: 768px) {
-        body { 
-        grid-template-areas: 
-        "kalkulator kalkulator"}
 
+ 
+    
+   #wrapper { 
+    width: 80%
 
-    #wrapper { 
-        grid-area: kalkulator;
-        width: 50%;
-        height: 50%;
-                                
-      }  
-    }
+}}
+
